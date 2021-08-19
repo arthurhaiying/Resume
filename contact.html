@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Haiying's Contact</title>
+</head>
+<script>
+    function onMsg() {
+        alert("Thanks.");
+    }
+</script>
+<body>
+    <h1> Contact Me By </h1>
+        <p>Email: hhaiying1998@outlook.com</p>
+        <p>Tel: 310-254-8712</p>
+        <p>Address: Room 386, Engineering 6, UCLA</p>
+</body>
+<hr>
+
+<!-- Contact Form -->
+<form action="contactHandler" method="get">
+    <div><label for="name">Your Name: </label>
+        <input type="text" name="name" required> 
+    </div>
+    <div>
+        <label for="email">Your Email: </label>
+        <input type="email" name="email" required>
+    </div>
+    <div>
+        <label for="message">Your Message: </label> <br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <button type="submit" onclick="onMsg()">Submit</button>
+</form>
+</html>
